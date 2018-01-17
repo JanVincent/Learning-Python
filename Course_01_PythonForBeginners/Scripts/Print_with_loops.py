@@ -7,9 +7,7 @@ Note: Print the list using loops
 """
 
 ids=["B3","\nB4","\nB5","\nB6"]
-
-
-    
+  
 with open("C:\\Users\\Jan Vincent\\OneDrive\\Python\\Python_For_Beginners\\text\\test1.txt","w") as file:
     for items in ids:
         print(items)

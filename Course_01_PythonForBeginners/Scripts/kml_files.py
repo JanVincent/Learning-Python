@@ -15,5 +15,4 @@ for coordinates_entered in range(0,coordinates_requested):
     requested_longitude=float(input("Enter the longitude"+ str(coordinates_entered)+":"))
     requested_langitude=float(input("Enter the langitude"+str(coordinates_entered)+":"))
     kml.newpoint(name="location"+str(coordinates_entered),coords=[(requested_longitude,requested_langitude)])
-   
 kml.save("C:\\Users\\Jan Vincent\\OneDrive\\Python\\Python_For_Beginners\\Generated\Google_location.kml")
