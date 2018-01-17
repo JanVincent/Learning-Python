@@ -15,9 +15,8 @@ from tkinter.filedialog import askopenfilename
 def browse():
     global input_file
     input_file=askopenfilename()
-
 def KMLGeneration(output_file="C:\\Users\\Jan Vincent\\OneDrive\\Python\\Python_For_Beginners\\Generated\Google_location_from_GUI.kml"):   
-    df= pandas.read_csv(input_file) 
+    df= pandas.read_csv(input_file)
     kml = simplekml.Kml()
     for long,lat in zip(df["Longitude"],df["Latitude"]):
         kml.newpoint(coords=[(long,lat)])
